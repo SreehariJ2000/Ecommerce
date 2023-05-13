@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
+from django.utils.encoding import DjangoUnicodeDecodeError
 #class based
 from django.views.generic import View
 
