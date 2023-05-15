@@ -52,8 +52,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          
           <li><a class="nav-link scrollto" href="/about">About</a></li>
           <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link scrollto" href="/purchase">Purchase</a></li>
           
           <li><a class="nav-link scrollto" href="">checkout</a></li>
           <li><a class="nav-link scrollto" href="">Trackers</a></li>
@@ -63,19 +65,22 @@
 
           {% if request.user.is_authenticated %}
 
-          <button type="button" class="btn btn-success " id="popcart" data-container="body"
-           data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
-          sagittis lacus vel augue laoreet rutrum faucibus."> </button>
+          
+          <button type="button" class="btn btn-dark " id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+          sagittis lacus vel augue laoreet rutrum faucibus.">
+          
+          
+            Cart(<span id="cart">0</span>)
+          </button>
 
-
-
+<!--
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href=""><h4 id="hai"><i class="fa-sharp fa-solid fa-cart-shopping fa-5p"></i> {{cart.num_of_items}}</h4></a>
           </li>
-
+        -->
 
           <li><a class="getstarted scrollto" >Welcome {{user.username}}</a></li>
-          <li><a class="nav-link scrollto" href="/Ecom_auth/logout/">Logout</a></li>
+          <li><a class="nav-link scrollto" href="/Ecom_auth/logout/">Logout</a></li>  
 
           {% else %}
           <li><a class="nav-link scrollto" href="/Ecom_auth/signup/">sign in</a></li>
@@ -151,9 +156,10 @@
         <div class="section-title" data-aos="fade-up">
           <h2>Products</h2>
         </div>
-
-        {% for product,range,nslides in allProds  %}
-
+       
+        
+        {% for product,range,nslides  in  allProds  %}
+                
         <div class="container">
           
            
@@ -217,10 +223,14 @@
         
         
         {% endfor %}
+      </div>
  <h1>fffffffffffff</h1>
 
+ 
 
       </div>
+
+      
 <!-- 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">

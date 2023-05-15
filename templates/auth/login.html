@@ -13,8 +13,8 @@ OneStopShopify login
         <div class="col-md-4">
              <br><br><br><br>
             <center><h1>Login</h1></center>
-            <form method="post" action="http://127.0.0.1:8000/Ecom_auth/login/"> {% csrf_token %}
-                
+            <form method="post" action="{% url 'handlelogin' %}"> 
+              {% csrf_token %}
               {% for message in messages %}
               <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
                 <strong></strong> {{message}}
