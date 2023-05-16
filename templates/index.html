@@ -40,21 +40,25 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1><i class="fa-sharp fa-solid fa-bag-shopping " style="color: #1f3e51;"></i></h1>
-      <div class="logo">
-        
-        <h1><a style="color:#4682B4;font-family: 'Montserrat';" href="index.html">OneStopShopify</a></h1>
-        
-        <!--   <h1><a href="index.html">OneStopShopify</a></h1>-->
-        <!--    logo  <a href="index.html"><img src=" '{% static 'assets/img/logo.png '%}" alt="" class="img-fluid"></a>-->
+      <div style="display: flex; align-items: center;">
+        <h1><i class="fa-sharp fa-solid fa-bag-shopping" style="color: #1f3e51;"></i></h1>
+        <h1 style="color: #4682B4; font-family: 'Montserrat'; margin-left: 0;">OneStopShopify</h1>
       </div>
+        
+      </div>
+        <!--   <h1><a href="index.html">OneStopShopify</a></h1>
+        <h1><a style="color:#4682B4;font-family: 'Montserrat';text-align: left" href="index.html">OneStopShopify</a></h1>
+        
+      -->
+        <!--    logo  <a href="index.html"><img src=" '{% static 'assets/img/logo.png '%}" alt="" class="img-fluid"></a>-->
+      
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
           
           <li><a class="nav-link scrollto" href="/about">About</a></li>
-          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+         
           <li><a class="nav-link scrollto" href="/purchase">Purchase</a></li>
           
           <li><a class="nav-link scrollto" href="">checkout</a></li>
@@ -66,14 +70,17 @@
           {% if request.user.is_authenticated %}
 
           
-          <button type="button" class="btn btn-dark " id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+          
+<!--
+
+  <button type="button" class="btn btn-dark " id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
           sagittis lacus vel augue laoreet rutrum faucibus.">
           
           
             Cart(<span id="cart">0</span>)
           </button>
 
-<!--
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href=""><h4 id="hai"><i class="fa-sharp fa-solid fa-cart-shopping fa-5p"></i> {{cart.num_of_items}}</h4></a>
           </li>
@@ -153,7 +160,9 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+    <!--
+      
+      <div class="section-title" data-aos="fade-up">
           <h2>Products</h2>
         </div>
        
@@ -229,7 +238,7 @@
  
 
       </div>
-
+    -->
       
 <!-- 
         <div class="row content">
