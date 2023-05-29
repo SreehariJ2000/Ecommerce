@@ -147,3 +147,8 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER='hsree524@gmail.com'
 EMAIL_HOST_PASSWORD='pjtikrqruqjdlapm'
+
+
+
+KEY='rzp_test_FMOpBOiCUjSCj0'
+SECRET='anzFEmiB7DGv2ZG5KjaEOLt1'
